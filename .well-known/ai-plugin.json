@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Time Plugin",
+  "name_for_model": "time",
+  "description_for_human": "Plugin for providing the current day and time. You can get the current time in KST.",
+  "description_for_model": "Plugin for providing the current day and time. You can get the current time in KST.",
+  "auth": {
+      "type": "none"
+  },
+  "api": {
+      "type": "openapi",
+      "url": "http://localhost:1037/.well-known/openapi.yaml"
+  },
+  "logo_url": "http://localhost:1037/.well-known/logo.png",
+  "contact_email": "support@timeplugin.com",
+  "legal_info_url": "http://www.timeplugin.com/legal"
+}

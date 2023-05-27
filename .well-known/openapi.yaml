@@ -1,0 +1,27 @@
+openapi: 3.0.1
+info:
+  title: Time Plugin
+  description: A plugin that allows the user to get the current day and time in KST using ChatGPT.
+  version: 'v1'
+servers:
+  - url: http://localhost:1037
+paths:
+  /time:
+    get:
+      operationId: getTime
+      summary: Get the current time
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTimeResponse'
+components:
+  schemas:
+    getTimeResponse:
+      type: object
+      properties:
+        time:
+          type: string
+          description: The current time in KST.
